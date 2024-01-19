@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  #container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .name{
+    margin: 20px;
+  }
+
+  #userProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #userProfile img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  #profileDetails {
+    text-align: left;
+  }
+
+  #profileDetails p {
+    margin: 5px 0;
+  }
+
+  input {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #repoList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+  }
+
+  .repoBox {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+  }
+
+  .repoBox h3 {
+    margin-top: 0;
+  }
+
+  .languagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .languageBox {
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .pagination {
+    margin-top: 20px;
+  }
+
+  .pagination label {
+    margin-right: 10px;
+  }
+
+  .pagination select {
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .pagination button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+  }
+
+  .pagination button:hover {
+    background-color: #45a049;
+  }
+
+  .loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  
